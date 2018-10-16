@@ -1,0 +1,40 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 50px;
+  background: white;
+  &__left {
+    img {
+      width: 190px;
+    }
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.navigation {
+  flex-grow: 1;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__list--items {
+    margin-left: 50px;
+
+    a {
+      font-weight: 400;
+      letter-spacing: 1.2px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $topNavLinkColor;
+    }
+  }
+}

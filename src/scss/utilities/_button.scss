@@ -1,0 +1,23 @@
+.button {
+  font-weight: 400;
+  font-size: 13px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  padding: 0 25px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 50px;
+  border-radius: 10px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+
+  &__yellow {
+    background-color: $brandColor;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
