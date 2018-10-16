@@ -1,7 +1,2 @@
-$body-bg: #f6f6f6;
-
-body {
-  background: $body-bg;
-  display: flex;
-  justify-content: center;
-}
+@import "base/base";
+@import "navbar/nav";
