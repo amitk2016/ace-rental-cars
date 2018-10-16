@@ -9,35 +9,53 @@
   <title>Ace Rental</title>
 </head>
 <body>
-
-      <!-- Top navbar  -->
-      <div class="top-nav">
-        <div class="top-nav__left">
-          <div>
-            <a href="#" class="active">New Zealand</a>
-          </div>
-          <a href="#">Australia</a>
-          <span class="top-nav__left--select">
-            <label for="id_select" id="select-label" >Language</label>
-           <select id="id_select" autofocus="true">
-             <option value="1">English</option>
-             <option value="2">Japanese</option>
-             <option value="2">Chinese</option>
-           </select
-         </span>
+  <header>
+    <!-- Top navbar  -->
+    <div class="top-nav">
+      <div class="top-nav__left">
+        <div>
+          <a href="#" class="active">New Zealand</a>
         </div>
-        <div class="top-nav__right">
-          <a href="#">0800 502 277</a>
-          <a href="#">Drivesafe</a>
-          <a href="#">Early Check In</a>
-  
-        </div>
+        <a href="#">Australia</a>
+        <span class="top-nav__left--select">
+          <label for="id_select" id="select-label" >Language</label>
+         <select id="id_select" autofocus="true">
+           <option value="1">English</option>
+           <option value="2">Japanese</option>
+           <option value="2">Chinese</option>
+         </select
+       </span>
+     </div><!-- Top left navbar section navbar  -->
+      <div class="top-nav__right">
+        <a href="#" id="nav-phonelink" >0800 502 277</a>
+        <a href="#" id="nav-drivesafe">Drive<span>safe</span></a>
+        <a href="#">Early Check In</a>
+      </div><!-- Top right navbar section navbar  -->
+    </div><!-- Top navbar  -->
+    <!-- Website main navbar  -->
+    <div class="main-nav">
+      <div class="main-nav__left">
+        <a href="#"><img src="img/logo.png" alt="Logo Image"></a>
       </div>
+      <div class="main-nav__right">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list--items"><a href="#">Rent the Experience</a></li>
+            <li class="navigation__list--items"><a href="#">Car Sales</a></li>
+            <li class="navigation__list--items"><a href="#">Our Cars</a></li>
+            <li class="navigation__list--items"><a href="#">Locations</a></li>
+            <li class="navigation__list--items"><a href="#">Deals</a></li>
+            <li class="navigation__list--items"><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <a href="#">Make a Booking</a>
+      </div>
+    </div>
+  </header>
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-      <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

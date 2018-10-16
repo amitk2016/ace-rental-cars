@@ -29,6 +29,8 @@ body {
       display: inline-block;
       height: 30px;
       line-height: 30px; }
+      .top-nav__left a:hover {
+        text-decoration: none; }
     .top-nav__left .active {
       display: inline-block;
       height: 30px;
@@ -38,7 +40,7 @@ body {
       padding: 0px 20px; }
       .top-nav__left--select #select-label {
         font-size: 12px;
-        font-weight: 400;
+        font-weight: 500;
         letter-spacing: 1px;
         text-transform: uppercase;
         display: inline-block;
@@ -52,3 +54,27 @@ body {
         letter-spacing: 1px;
         text-transform: uppercase;
         border: none; }
+  .top-nav__right a {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333338;
+    padding: 0px 20px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px; }
+    .top-nav__right a:hover {
+      text-decoration: none; }
+
+#nav-phonelink {
+  font-weight: 800;
+  color: #0056a7; }
+
+#nav-drivesafe {
+  font-size: 18px;
+  font-weight: 400;
+  color: #f8c513; }
+  #nav-drivesafe span {
+    color: #93a0a9;
+    font-weight: 700; }
