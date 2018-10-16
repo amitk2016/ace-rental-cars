@@ -2,6 +2,24 @@
   display: flex;
 
   .main-content {
+    padding: 10px 50px;
+  }
+
+  .cover-info {
+    font-style: italic;
+    padding: 20px;
+    background: rgb(236, 236, 236);
+    color: #333338;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 23px 0 hsla(207, 8%, 74%, 0.33);
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 }
 
