@@ -1,0 +1,12 @@
+.main-box {
+  display: flex;
+
+  .main-content {
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main-box {
+    flex-direction: column-reverse;
+  }
+}
