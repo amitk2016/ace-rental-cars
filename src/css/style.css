@@ -453,12 +453,9 @@ hr {
 .gray-color {
   color: #3d3d3d; }
 
-@media only screen and (max-width: 900px) {
-  .main-box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; } }
+.hamburger-menu {
+  margin-left: 50px;
+  font-size: 24px; }
 
 .footer {
   background-color: #f1f4f5;
@@ -521,3 +518,22 @@ hr {
         .footer__container .social-links .icon i {
           font-size: 20px;
           color: #333338; }
+
+@media only screen and (max-width: 900px) {
+  .main-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 1080px) {
+  .top-nav {
+    display: none; } }
+
+@media only screen and (min-width: 1254px) {
+  .hamburger-menu {
+    display: none; } }
+
+@media only screen and (max-width: 1254px) {
+  .navigation {
+    display: none; } }

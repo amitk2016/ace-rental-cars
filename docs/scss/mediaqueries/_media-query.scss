@@ -1,0 +1,21 @@
+@media only screen and (max-width: 900px) {
+  .main-box {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .top-nav {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1254px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1254px) {
+  .navigation {
+    display: none;
+  }
+}

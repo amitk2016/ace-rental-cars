@@ -6,7 +6,7 @@ const autoprefixer = require("gulp-autoprefixer");
 // Compile Sass & Inject Into Browser
 gulp.task("sass", function() {
   return gulp
-    .src(["docs/scss/**/*.scss"])
+    .src(["src/scss/**/*.scss"])
     .pipe(sass())
     .pipe(
       autoprefixer({
@@ -14,18 +14,18 @@ gulp.task("sass", function() {
         cascade: false
       })
     )
-    .pipe(gulp.dest("docs/css"))
+    .pipe(gulp.dest("src/css"))
     .pipe(browserSync.stream());
 });
 
 // Watch Sass & Serve
 gulp.task("serve", ["sass"], function() {
   browserSync.init({
-    server: "./docs"
+    server: "./src"
   });
 
-  gulp.watch(["docs/scss/**/*.scss"], ["sass"]);
-  gulp.watch("docs/*.html").on("change", browserSync.reload);
+  gulp.watch(["src/scss/**/*.scss"], ["sass"]);
+  gulp.watch("src/*.html").on("change", browserSync.reload);
 });
 
 // Default Task
