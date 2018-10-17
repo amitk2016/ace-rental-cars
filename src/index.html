@@ -52,6 +52,9 @@
         <a href="#" class="button button__yellow margin-l-50">Make a Booking</a>
       </div><!-- Main navigation box contains nav list and call to action  -->
     </div><!-- Website main navbar  -->
+    <div class="icon icon-chat">
+      <i class="far fa-comments"></i>
+    </div>
   </header>
 
   <main class="main-box">
@@ -156,10 +159,18 @@
     </section><!-- Left SideBar -->
 
     <section class="main-content">
-        <h1 class="heading heading__one">Make a Booking</h1>
-        <div class="progress-bar">
-
+        <h1 class="heading heading__one margin-bottom-18">Make a Booking</h1>
+        <div class="label-progress" style="display:flex;justify-content:space-between">
+          <p class="progressbar-text">Select a Vehicle</p>
+          <p class="progressbar-text">Add Extras</p>
+          <p class="progressbar-text">Personal Details</p>
+          <p class="progressbar-text">Payment</p>
+          <p class="progressbar-text">Complete</p>
         </div>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width:30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+
         <div class="cover-info">
           <p>
             All our vehicles have <span class="bold-font">Minimum Cover</span> included Which has an Excess of <span class="bold-font">$2,500</span> that will be charged to your credit card in the event of any damage to the vehicle while on hire, <span class="bold-font"> Minimum Cover</span> also has a Bond of <span class="bold-font">$750</span>that will be held on your credit card for the duration of the rental period.
@@ -167,7 +178,8 @@
         </div><!-- Cover info -->
 
         <div class="cards-box">
-          <p>1. Please choose the coverage option</p>
+
+          <p class="margin-bottom-18">1. Please choose the coverage option</p>
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4">
@@ -285,8 +297,8 @@
           </div>
         </div><!-- Cards for Ace cover is finished here -->
 
-        <div class="extra">
-          <p>2. Choose extras to add to your rental.</p>
+        <div class="extra" style="margin-top:34px;">
+          <p class="margin-bottom-18">2. Choose extras to add to your rental.</p>
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4">
@@ -355,6 +367,9 @@
 
               </div>
             </div>
+          </div>
+          <div style="padding-left:12px">
+              <a href="#" class="button button__yellow">Continue with a minimum cover</a>
           </div>
         </div>
 

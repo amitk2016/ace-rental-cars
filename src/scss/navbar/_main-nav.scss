@@ -38,3 +38,30 @@
     }
   }
 }
+
+.icon {
+  margin-left: 20px;
+  background: $brandColor;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.6s;
+  &:hover i {
+    transform: scale(1.4);
+  }
+  i {
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s;
+  }
+}
+.icon-chat {
+  position: fixed;
+  right: 80px;
+  top: 120px;
+  z-index: 1;
+}
