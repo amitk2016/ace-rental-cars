@@ -16,6 +16,8 @@
 
 .car-features {
   padding: 20px 20px;
+  max-width: 500px;
+  margin: 0 auto;
   &--first,
   &--second,
   &--third {
@@ -34,6 +36,8 @@
 }
 // Quote css
 .quote {
+  max-width: 500px;
+  margin: 0 auto;
   &__car {
     &-cost,
     &-fee,

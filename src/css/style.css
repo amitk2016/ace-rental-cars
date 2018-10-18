@@ -1,6 +1,7 @@
 body {
   background: #f1f4f5;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden; }
 
 .top-nav {
   display: -webkit-box;
@@ -236,7 +237,9 @@ body {
     width: 300px; }
 
 .car-features {
-  padding: 20px 20px; }
+  padding: 20px 20px;
+  max-width: 500px;
+  margin: 0 auto; }
   .car-features--first, .car-features--second, .car-features--third {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -252,28 +255,31 @@ body {
       font-size: 20px;
       padding-right: 10px; }
 
-.quote__car-cost, .quote__car-fee, .quote__car-cover, .quote__car-gst, .quote__car-totalPrice {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 20px;
-  padding: 5px; }
-  .quote__car-cost ul, .quote__car-fee ul, .quote__car-cover ul, .quote__car-gst ul, .quote__car-totalPrice ul {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .quote__car-cost .price, .quote__car-fee .price, .quote__car-cover .price, .quote__car-gst .price, .quote__car-totalPrice .price {
-    margin-left: 10px; }
-  .quote__car-cost .totalPrice, .quote__car-fee .totalPrice, .quote__car-cover .totalPrice, .quote__car-gst .totalPrice, .quote__car-totalPrice .totalPrice {
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 15px; }
+.quote {
+  max-width: 500px;
+  margin: 0 auto; }
+  .quote__car-cost, .quote__car-fee, .quote__car-cover, .quote__car-gst, .quote__car-totalPrice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 5px; }
+    .quote__car-cost ul, .quote__car-fee ul, .quote__car-cover ul, .quote__car-gst ul, .quote__car-totalPrice ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    .quote__car-cost .price, .quote__car-fee .price, .quote__car-cover .price, .quote__car-gst .price, .quote__car-totalPrice .price {
+      margin-left: 10px; }
+    .quote__car-cost .totalPrice, .quote__car-fee .totalPrice, .quote__car-cover .totalPrice, .quote__car-gst .totalPrice, .quote__car-totalPrice .totalPrice {
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 15px; }
 
 hr {
   margin-top: 0px;
@@ -284,7 +290,9 @@ hr {
   display: -ms-flexbox;
   display: flex; }
   .main-box .main-content {
-    padding: 10px 50px 150px 50px; }
+    padding: 10px 50px 150px 50px;
+    max-width: 1140px;
+    margin: 0 auto; }
   .main-box .cover-info {
     font-style: italic;
     padding: 20px;
@@ -455,7 +463,8 @@ hr {
 
 .hamburger-menu {
   margin-left: 50px;
-  font-size: 24px; }
+  font-size: 24px;
+  color: #0056a7; }
 
 .footer {
   background-color: #f1f4f5;
@@ -463,22 +472,11 @@ hr {
   padding-bottom: 65px;
   border-top: 1px solid #e1e5e7; }
   .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     max-width: 1170px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 0px 20px; }
     .footer__container .footer-menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      width: 800px; }
+      min-width: 800px; }
     .footer__container ul {
       margin: 0;
       padding: 0;
@@ -519,12 +517,39 @@ hr {
           font-size: 20px;
           color: #333338; }
 
-@media only screen and (max-width: 900px) {
+.qualmark img {
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 20px; }
+
+@media only screen and (max-width: 600px) {
+  .booking-button {
+    display: none; } }
+
+@media only screen and (min-width: 800px) {
+  .footer__container .footer-menu {
+    width: 300px; } }
+
+@media only screen and (max-width: 990px) {
+  .card {
+    margin-bottom: 30px; } }
+
+@media only screen and (max-width: 1200px) {
   .main-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; } }
+
+@media only screen and (max-width: 1000px) {
+  .footer__container,
+  .footer-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .footer-last-link {
+    margin-bottom: 20px; } }
 
 @media only screen and (max-width: 1080px) {
   .top-nav {

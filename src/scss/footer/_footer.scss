@@ -5,14 +5,16 @@
   border-top: 1px solid #e1e5e7;
 
   &__container {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0px 20px;
+
     .footer-menu {
-      display: flex;
-      justify-content: space-between;
-      width: 800px;
+      // display: flex;
+      // justify-content: space-between;
+      min-width: 800px;
     }
 
     ul {
@@ -51,5 +53,13 @@
         }
       }
     }
+  }
+}
+
+.qualmark {
+  img {
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }

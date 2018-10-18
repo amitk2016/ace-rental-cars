@@ -49,17 +49,17 @@
             <li class="navigation__list--items"><a href="#">Blog</a></li>
           </ul>
         </nav>
-        <a href="#" class="button button__yellow margin-l-50">Make a Booking</a>
+        <a href="#" class="button button__yellow margin-l-50 booking-button">Make a Booking</a>
         <div class="hamburger-menu">
           <i class="fas fa-bars"></i>
         </div>
       </div><!-- Main navigation box contains nav list and call to action  -->
     </div><!-- Website main navbar  -->
-    <div class="icon icon-chat">
-      <i class="far fa-comments"></i>
-    </div>
-  </header>
 
+  </header>
+  <div class="icon icon-chat">
+    <i class="far fa-comments"></i>
+  </div>
   <main class="main-box">
     <section class=" left-sidebar">
         <div class="car-info">
@@ -331,7 +331,7 @@
               <div class="col-md-4">
                 <div class="extra__panel">
                   <div class="extra__panel--title">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-child"></i>
                     <span>Child Seat Forward Facing</span>
                   </div>
                   <div class="extra__panel--price">
@@ -371,7 +371,7 @@
               </div>
             </div>
           </div>
-          <div style="padding-left:12px">
+          <div style="padding-left:12px;margin-top:30px;">
               <a href="#" class="button button__yellow">Continue with a minimum cover</a>
           </div>
         </div>
@@ -382,10 +382,12 @@
 
 
 
-  <footer class="footer"><!-- Footer Starts  -->
-    <div class="footer__container">
-      <div class="footer-menu">
-        <div class="quick-links">
+
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="row">
+        <div class="col-md-3">
           <h3 class="heading heading__three">Quick Links</h3>
           <ul>
             <li><a href="#">Our Vehicles</a></li>
@@ -397,14 +399,14 @@
             <li><a href="#">Deals</a></li>
           </ul>
         </div>
-        <div class="our-locations">
+        <div class="col-md-3">
           <h3 class="heading heading__three">Our Locations</h3>
           <ul>
             <li><a href="#">New Zealand</a></li>
             <li><a href="#">Australia</a></li>
           </ul>
         </div>
-        <div class="about-us">
+        <div class="col-md-3 footer-last-link">
           <h3 class="heading heading__three">About Us</h3>
           <ul>
             <li><a href="#">Ace Rental Car Reviews</a></li>
@@ -418,14 +420,19 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
-      </div>
-      <div class="social-links">
-          <div class='icon social fb'><i class="fab fa-facebook-f"></i></div>
-          <div class='icon social tw'><i class="fab fa-twitter"></i></div>
-          <div class='icon social in'><i class="fab fa-google-plus-g"></i></div>
+        <div class="col-md-3">
+          <div class="social-links">
+              <div class='icon social fb'><i class="fab fa-facebook-f"></i></div>
+              <div class='icon social tw'><i class="fab fa-twitter"></i></div>
+              <div class='icon social in'><i class="fab fa-google-plus-g"></i></div>
+          </div>
+          <div class="qualmark">
+            <img src="img/qualmark.jpg" alt="qualmark" >
+          </div>
+        </div>
       </div>
     </div>
-  </footer><!-- Footer Ends  -->
+  </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

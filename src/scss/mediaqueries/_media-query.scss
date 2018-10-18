@@ -1,6 +1,33 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
+  .booking-button {
+    display: none;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .footer__container .footer-menu {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .card {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
   .main-box {
     flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer__container,
+  .footer-menu {
+    flex-direction: column;
+  }
+
+  .footer-last-link {
+    margin-bottom: 20px;
   }
 }
 

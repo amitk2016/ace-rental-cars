@@ -3,6 +3,8 @@
 
   .main-content {
     padding: 10px 50px 150px 50px;
+    max-width: 1140px;
+    margin: 0 auto;
   }
 
   .cover-info {
@@ -177,4 +179,5 @@
 .hamburger-menu {
   margin-left: 50px;
   font-size: 24px;
+  color: $activeBlue;
 }
