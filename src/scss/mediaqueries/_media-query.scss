@@ -2,6 +2,10 @@
   .booking-button {
     display: none;
   }
+  .label-progress,
+  .label {
+    display: none;
+  }
 }
 @media only screen and (min-width: 800px) {
   .footer__container .footer-menu {
